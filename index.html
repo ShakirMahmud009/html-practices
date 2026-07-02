@@ -9,11 +9,12 @@
 <style>
 </style>
 <body>
+    <form>
     <div>
     <fieldset>
         <legend align="center">Profile</legend>
         <label for="fname">First Name:</label>
-        <input type="text" placeholder="Enter your first name"> 
+        <input type="text" placeholder="Enter your first name" required> 
         <div align="right">
             <label for="Profession" placeholder="profession">Profession:</label>
             <select id="Profession" name="Profession">
@@ -23,7 +24,7 @@
             </select> 
         </div>
         <label for="lname">Last Name:</label>
-        <input type="text" placeholder="Enter your last name"> <br> <br>
+        <input type="text" placeholder="Enter your last name" required> <br> <br>
         <div>
             <label for="gender">Gender:</label>
             <input list="gender" placeholder="Select your gender">
@@ -32,7 +33,11 @@
                 <option value="Female">
                 <option value="Other">
             </datalist>
-        </div>
+        </div><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" required><br> <br>
+        <label for="address">Address:</label>
+        <textarea rows="3" cols="20" name="address" placeholder="Enter your address here..."></textarea>
     </fieldset>
     </div>
     <div>
@@ -52,6 +57,9 @@
         </div>
     </fieldset>
     </div>
+    <br> 
+    <button type="submit" style="align-self: center; color: blue;">Submit</button>
+    </form><br> <br>
 
 </body>
 </html>
