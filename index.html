@@ -14,7 +14,7 @@
     <fieldset>
         <legend align="center">Profile</legend>
         <label for="fname">First Name:</label>
-        <input type="text" placeholder="Enter your first name" required> 
+        <input type="text" pattern="^\S+$" placeholder="Enter your first name" required> 
         <div align="right">
             <label for="Profession" placeholder="profession">Profession:</label>
             <select id="Profession" name="Profession">
@@ -33,7 +33,7 @@
                 <option value="Female">
                 <option value="Other">
             </datalist>
-        </div><br>
+        </div><br
         <label for="dob">Date of Birth:</label>
         <input type="date" required><br> <br>
         <label for="address">Address:</label>
@@ -44,11 +44,11 @@
     <fieldset>
         <legend align="center">Privacy</legend>
         <label for="email">Email:</label>
-        <input type="email" placeholder="Enter your email"> <br> <br>
+        <input type="email" size="70" placeholder="Enter your email"> <br> <br>
         <label for="password">Password:</label>
         <input type="password" placeholder="Enter your password"> <br> <br>
         <label for="phone">Phone Number:</label>
-        <input type="number" id="phone" placeholder="Enter your phone number">
+        <input type="number" id="phone" size="50" placeholder="Enter your phone number">
         <input type="checkbox" id="remember" name="remember">
         <label for="remember">Remember me</label> <br> <br>
         <div align="right">
