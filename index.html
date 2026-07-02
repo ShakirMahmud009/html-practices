@@ -6,13 +6,16 @@
     <title>PRACTICES</title>
 
 </head>
+<style>
+</style>
 <body>
+    <div>
     <fieldset>
         <legend align="center">Profile</legend>
         <label for="fname">First Name:</label>
         <input type="text" placeholder="Enter your first name"> 
-        <div align="right" position="relative">
-            <label for="Profession">Profession:</label>
+        <div align="right">
+            <label for="Profession" placeholder="profession">Profession:</label>
             <select id="Profession" name="Profession">
                 <option value="Engineer">Engineer</option>
                 <option value="Doctor">Doctor</option>
@@ -23,16 +26,32 @@
         <input type="text" placeholder="Enter your last name"> <br> <br>
         <div>
             <label for="gender">Gender:</label>
-            <input list="gender">
+            <input list="gender" placeholder="Select your gender">
             <datalist id="gender">
                 <option value="Male">
                 <option value="Female">
                 <option value="Other">
             </datalist>
         </div>
-
-
-
     </fieldset>
+    </div>
+    <div>
+    <fieldset>
+        <legend align="center">Privacy</legend>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your email"> <br> <br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter your password"> <br> <br>
+        <label for="phone">Phone Number:</label>
+        <input type="number" id="phone" placeholder="Enter your phone number">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember me</label> <br> <br>
+        <div align="right">
+            <button><a href="mailto:rocktheman2018@gmail.com" style="text-decoration:none;"><b>Mail Us</b></a></button>
+            <button><a href="tel:+8801995074001" style="text-decoration:none;"><b>Call Us</b></a></button>
+        </div>
+    </fieldset>
+    </div>
+
 </body>
 </html>
